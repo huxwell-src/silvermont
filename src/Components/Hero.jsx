@@ -15,7 +15,7 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white h-screen overflow-hidden flex flex-col justify-center bg-no-repeat object-cover bg-gradient-to-r from-cyan-500 to-blue-500 h-[100dvh] ">
+    <div className="bg-white overflow-hidden flex flex-col justify-center bg-no-repeat object-cover bg-gradient-to-r from-cyan-500 to-blue-500 h-[100svh] ">
       <div></div>
       {/* Encabezado con barra de navegación */}
       <header className="absolute inset-x-0 top-0 z-50">
