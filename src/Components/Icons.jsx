@@ -12,7 +12,7 @@ export const Menu = ({ color, width, height }) => (
   </svg>
 );
 
-export const Logo = ({ color, width, height }) => (
+export const Logo = ({ color, width, height, className }) => (
   <svg
     version="1.0"
     xmlns="http://www.w3.org/2000/svg"
@@ -20,6 +20,7 @@ export const Logo = ({ color, width, height }) => (
     height={height}
     viewBox="0 0 3601.000000 907.000000"
     preserveAspectRatio="xMidYMid meet"
+    className={className} // Adding the className prop to the SVG element
   >
     <g
       transform="translate(0.000000,907.000000) scale(0.100000,-0.100000)"

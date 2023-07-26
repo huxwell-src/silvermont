@@ -1,21 +1,22 @@
 import { useState } from 'react';
-
+import { Logo } from './Icons';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 // Datos de navegación
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Inicio', href: '#' },
+  { name: 'Servicios', href: '#' },
+  { name: 'Galeria', href: '#' },
+  { name: 'Contacto', href: '#Contact' },
 ];
 
 export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white h-screen overflow-hidden flex flex-col justify-center items-center  ">
+    <div className="bg-white h-screen overflow-hidden flex flex-col justify-center bg-no-repeat object-cover bg-gradient-to-r from-cyan-500 to-blue-500">
+      <div></div>
       {/* Encabezado con barra de navegación */}
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
@@ -26,18 +27,14 @@ export default function Hero() {
             {/* Logo */}
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Silvermount</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+              <Logo height="32" color="#FDFDFD" />
             </a>
           </div>
           {/* Botón del menú en dispositivos móviles */}
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-light"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
@@ -50,7 +47,7 @@ export default function Hero() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-sm font-semibold leading-6 text-light hover:scale-110 duration-200"
               >
                 {item.name}
               </a>
@@ -80,7 +77,7 @@ export default function Hero() {
               {/* Botón de cierre del menú desplegable */}
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className="-m-2.5 rounded-md p-2.5 text-light-black"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
@@ -95,7 +92,7 @@ export default function Hero() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3  block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
                     </a>
@@ -113,10 +110,10 @@ export default function Hero() {
         <div className=""></div>
         <div className="mx-auto max-w-2xl ">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl text-light ">
               Data to enrich your online business
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 text-light ">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
               fugiat aliqua.
@@ -124,15 +121,16 @@ export default function Hero() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-full bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 
+                active:scale-95 duration-200"
               >
-                Get started
+                Contactar
               </a>
               <a
                 href="#"
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-sm font-semibold leading-6 text-light hover:scale-105 duration-200"
               >
-                Learn more <span aria-hidden="true">→</span>
+                Explorar <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
