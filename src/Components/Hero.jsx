@@ -26,7 +26,7 @@ export default function Hero() {
           <div className="flex lg:flex-1">
             {/* Logo */}
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Silvermount</span>
+              <span className="sr-only">Silvermont</span>
               <Logo height="32" color="#FDFDFD" />
             </a>
           </div>
@@ -68,11 +68,7 @@ export default function Hero() {
               {/* Logo en el menú desplegable */}
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Silvermount</span>
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
+                <Logo height="25" color="#191919" />
               </a>
               {/* Botón de cierre del menú desplegable */}
               <button
