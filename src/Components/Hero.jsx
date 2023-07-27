@@ -16,8 +16,8 @@ export default function Hero() {
 
   return (
     <>
-      <div className=" bg-fixed bg-cover backdrop-blur bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80')]">
-        <div className="overflow-hidden flex flex-col justify-center bg-no-repeat object-cover h-[100svh] ">
+      <div className=" bg-fixed bg-cover bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80')]">
+        <div className="overflow-hidden backdrop-blur	 flex flex-col justify-center bg-no-repeat object-cover h-[100svh] ">
           {/* Encabezado con barra de navegación */}
           <header className="absolute inset-x-0 top-0 z-50">
             <nav
