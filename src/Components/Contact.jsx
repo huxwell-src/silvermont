@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import axios from 'axios';
 
 function Contact() {
@@ -107,7 +107,7 @@ function Contact() {
             </label>
             <div className="flex items-center">
               <select
-                className="appearance-none block bg-gray-200 w-1/4 text-gray-700 border border-gray-200 rounded-l py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block bg-gray-200 w-1/4 text-gray-700 border border-gray-200 rounded-l-xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 onChange={(e) => setSelectedCountry(e.target.value)}
                 value={selectedCountry}
               >
@@ -125,7 +125,7 @@ function Contact() {
                 ))}
               </select>
               <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-r py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-r-xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="phone"
                 type="text"
                 placeholder="Número de teléfono"
