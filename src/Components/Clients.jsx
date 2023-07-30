@@ -1,47 +1,49 @@
 import { useState } from 'react';
+import angelainmo from '../assets/angelainmo.png'
+import constect from '../assets/constect.png'
+import cuidadoIntegral from '../assets/cuidado integrak.jpg'
+import proseshs from '../assets/prosehs.png'
+import realtyWorld from '../assets/realty world.png'
+import securimetal from '../assets/securimental.png'
+import strdGo from '../assets/strd go.jpg'
 
 const Clients = () => {
   // Arreglo de datos de clientes
   const clientsData = [
     {
       id: 1,
-      imgUrl: 'https://acroadtrip.blob.core.windows.net/catalogo-imagenes/m/RT_V_6b8d809e846542f9a8b4ecf1114fdd33.jpg',
-      altText: 'Client 1',
+      imgUrl: angelainmo,
+      altText: 'Angela Inmobiliaria',
     },
     {
       id: 2,
-      imgUrl: 'https://acroadtrip.blob.core.windows.net/catalogo-imagenes/m/RT_V_6b8d809e846542f9a8b4ecf1114fdd33.jpg',
-      altText: 'Client 2',
+      imgUrl: constect,
+      altText: 'Constect',
     },
     {
       id: 3,
-      imgUrl: 'https://acroadtrip.blob.core.windows.net/catalogo-imagenes/m/RT_V_6b8d809e846542f9a8b4ecf1114fdd33.jpg',
-      altText: 'Client 3',
+      imgUrl: cuidadoIntegral,
+      altText: 'Cuidado Integral',
     },
     {
       id: 4,
-      imgUrl: 'https://acroadtrip.blob.core.windows.net/catalogo-imagenes/m/RT_V_6b8d809e846542f9a8b4ecf1114fdd33.jpg',
-      altText: 'Client 3',
+      imgUrl: proseshs,
+      altText: 'Proseshs',
     },
     {
       id: 5,
-      imgUrl: 'https://acroadtrip.blob.core.windows.net/catalogo-imagenes/m/RT_V_6b8d809e846542f9a8b4ecf1114fdd33.jpg',
-      altText: 'Client 3',
+      imgUrl: realtyWorld,
+      altText: 'Realty World',
     },
     {
       id: 6,
-      imgUrl: 'https://acroadtrip.blob.core.windows.net/catalogo-imagenes/m/RT_V_6b8d809e846542f9a8b4ecf1114fdd33.jpg',
-      altText: 'Client 3',
+      imgUrl: securimetal,
+      altText: 'Securimetal',
     },
     {
       id: 7,
-      imgUrl: 'https://acroadtrip.blob.core.windows.net/catalogo-imagenes/m/RT_V_6b8d809e846542f9a8b4ecf1114fdd33.jpg',
-      altText: 'Client 3',
-    },
-    {
-      id: 8,
-      imgUrl: 'https://acroadtrip.blob.core.windows.net/catalogo-imagenes/m/RT_V_6b8d809e846542f9a8b4ecf1114fdd33.jpg',
-      altText: 'Client 3',
+      imgUrl: strdGo,
+      altText: 'Strd Go',
     },
   ];
   
@@ -49,18 +51,21 @@ const Clients = () => {
   const [hoveredClientId, setHoveredClientId] = useState(null);
 
   return (
-    <section className="mx-4">
-      <div className="mx-auto max-w-screen-xl px-4 py-8 lg:py-16">
-        <h2 className="mb-8 text-center text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900 md:text-4xl lg:mb-16">
-          Nuestros <span className="text-gold">Clientes</span>
-        </h2>
-        <ul className="grid grid-cols-2 gap-10 sm:gap-12 md:grid-cols-3 lg:grid-cols-4">
+    <section className="">
+      <div className="mx-auto py-8 lg:py-16">
+        <div className='flex items-center justify-center flex-col mb-8 lg:mb-16'>
+          <h2 className="text-center text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight mb-4 text-gray-900 md:text-4xl">
+            Nuestros <span className="text-gold">Clientes</span>
+          </h2>
+          <span className='text-sm leading-7 text-gray-500 uppercase ' >Construyendo Relaciones Duraderas: Nuestra Dedicación a los Clientes y la Excelencia en Cada Proyecto</span>
+        </div>
+        <ul className="grid grid-cols-3 gap-10 sm:gap-12 md:grid-cols-3 lg:grid-cols-7">
           {clientsData.map((client) => (
             <li
               key={client.id}
               className={`flex items-center justify-center ${
                 hoveredClientId !== null && hoveredClientId !== client.id
-                  ? 'blur'
+                  ? 'blur-sm duration-[400ms] '
                   : ''
               }`}
               onMouseEnter={() => setHoveredClientId(client.id)}
@@ -70,7 +75,7 @@ const Clients = () => {
                 src={client.imgUrl}
                 className={`grayscale ${
                   hoveredClientId === client.id ? 'grayscale-0' : ''
-                } duration-300 transform ${
+                } duration-[400ms] transform ${
                   hoveredClientId === client.id ? '-translate-y-3' : ''
                 }`}
                 alt={client.altText}
