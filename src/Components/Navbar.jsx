@@ -12,7 +12,7 @@ const Navbar = () => {
   const Width = () => 125;
 
   return (
-    <header className="z-[999] absolute px-10 py-4 flex justify-between items-center duration-75">
+    <header className="z-[999] absolute px-10 py-4 flex  justify-between items-center duration-75">
       <a href="#">
         {' '}
         <Logo color="#252525" width={Width()} />

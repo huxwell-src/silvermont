@@ -2,6 +2,7 @@ import {} from 'react';
 import Hero from './Components/Hero';
 import Contact from './Components/Contact';
 import Clients from './Components/Clients';
+import Galery from './Components/Galery';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import './App.css';
 
@@ -15,7 +16,7 @@ function App() {
           chatMessage="Hola, bienvenido! 🤝
 Como podemos ayudarte?"
           placeholder="Escribir un mensaje"
-          phoneNumber="+54 9 11 6020-1806"
+          phoneNumber="+[country code] [number]"
           notification= "true"
           notificationSound="true"
           notificationDelay="30"
@@ -24,6 +25,7 @@ Como podemos ayudarte?"
         />
         <Hero />
         <div className='container mx-auto'>
+        <Galery/>
         <Clients/>
         <Contact />
         </div>

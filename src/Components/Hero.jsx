@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Logo } from './Icons';
 import { Dialog } from '@headlessui/react';
+import Foto from '../assets/tobias-reich-Evw7_g2qn_g-unsplash.jpg'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 // Datos de navegación
@@ -16,6 +17,7 @@ export default function Hero() {
 
   return (
     <>
+      <img src={Foto} alt="" />
       <div className=" bg-fixed bg-cover bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80')]">
         <div className="overflow-hidden backdrop-blur	 flex flex-col justify-center bg-no-repeat object-cover h-[100svh] ">
           {/* Encabezado con barra de navegación */}
