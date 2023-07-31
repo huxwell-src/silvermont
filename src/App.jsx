@@ -3,6 +3,8 @@ import Hero from './Components/Hero';
 import Contact from './Components/Contact';
 import Clients from './Components/Clients';
 import Galery from './Components/Galery';
+import Cta from './Components/Cta'
+import Rrss from './Components/Rrss';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import './App.css';
 
@@ -23,11 +25,15 @@ Como podemos ayudarte?"
           allowClickAway="True"
           allowEsc="True"
         />
-        <Hero />
-        <div className='container mx-auto'>
-        <Galery/>
-        <Clients/>
-        <Contact />
+        <Hero/>
+        <div className='container mx-auto px-4'>
+          <Galery/>
+          <Clients/>
+        </div>
+        <Cta/>
+        <div className='container mx-auto px-4'>
+          <Contact />
+          <Rrss/>
         </div>
     </>
   );

@@ -6,6 +6,7 @@ import proseshs from '../assets/prosehs.png'
 import realtyWorld from '../assets/realty world.png'
 import securimetal from '../assets/securimental.png'
 import strdGo from '../assets/strd go.jpg'
+import Tittle from './Tittle';
 
 const Clients = () => {
   // Arreglo de datos de clientes
@@ -53,12 +54,11 @@ const Clients = () => {
   return (
     <section className="">
       <div className="mx-auto py-8 lg:py-16">
-        <div className='flex items-center justify-center flex-col mb-8 lg:mb-16'>
-          <h2 className="text-center text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight mb-4 text-gray-900 md:text-4xl">
-            Nuestros <span className="text-gold">Clientes</span>
-          </h2>
-          <span className='text-sm leading-7 text-gray-500 uppercase ' >Construyendo Relaciones Duraderas: Nuestra Dedicación a los Clientes y la Excelencia en Cada Proyecto</span>
-        </div>
+        <Tittle
+        titulo="Nuestross"
+        destacado="Clientes"
+        subtitulo="Visita todas nuestras redes sociales y descubre todo lo nuevo que tendemos para ti"
+        />
         <ul className="grid grid-cols-3 gap-10 sm:gap-12 md:grid-cols-3 lg:grid-cols-7">
           {clientsData.map((client) => (
             <li

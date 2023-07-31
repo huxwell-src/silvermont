@@ -7,7 +7,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 const navigation = [
   { name: 'Inicio', href: '#' },
   { name: 'Servicios', href: '#' },
-  { name: 'Galeria', href: '#' },
+  { name: 'Galeria', href: '#Galery' },
   { name: 'Contacto', href: '#Contact' },
 ];
 
@@ -15,9 +15,9 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <>
-      <div className=" bg-fixed bg-cover bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80')]">
-        <div className="overflow-hidden backdrop-blur	 flex flex-col justify-center bg-no-repeat object-cover h-[100svh] ">
+    <> 
+      <div className=" bg-fixed bg-cover bg-[url('https://images.unsplash.com/photo-1601585195878-4017735dea2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80')]">
+        <div className="bg-black/75 overflow-hidden backdrop-blur	 flex flex-col justify-center bg-no-repeat object-cover h-[100svh] ">
           {/* Encabezado con barra de navegación */}
           <header className="absolute inset-x-0 top-0 z-50">
             <nav
@@ -48,7 +48,7 @@ export default function Hero() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-sm font-semibold leading-6 text-light hover:scale-110 duration-200"
+                    className="md:text-base text-sm  font-semibold leading-6 text-light hover:scale-110 duration-200"
                   >
                     {item.name}
                   </a>
@@ -89,7 +89,7 @@ export default function Hero() {
                         <a
                           key={item.name}
                           href={item.href}
-                          className="-mx-3  block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                          className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                         >
                           {item.name}
                         </a>
@@ -105,10 +105,10 @@ export default function Hero() {
           <div className="relative isolate px-6 flex items-center pt-14 lg:px-8">
             {/* Fondo degradado y efecto de desenfoque */}
             <div className=""></div>
-            <div className="mx-auto max-w-2xl ">
+            <div className="mx-auto max-w-5xl ">
               <div className="text-center">
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl text-light ">
-                  Data to enrich your online business
+                <h1 className="text-4xl font-bold tracking-tight sm:text-6xl text-light ">
+                ¿Necesita grabar vídeos de alta calidad de las propiedades de su empresa? <br /> Nosotros podemos hacerlo.
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600 text-light ">
                   Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
