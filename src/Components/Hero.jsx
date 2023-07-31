@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Logo } from './Icons';
 import { Dialog } from '@headlessui/react';
-import Wave from '../assets/wave-hero.png';
+import Wave from '../assets/wavHero.png';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 // Datos de navegación
