@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Logo } from './Icons';
 import { Dialog } from '@headlessui/react';
+import Wave from '../assets/wave-hero.png';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 // Datos de navegación
@@ -130,7 +131,9 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="self-end h-20 w-full mt-auto bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] "></div>
+          <div className="self-end h-20 w-full  mt-auto ">
+            <img src={Wave} className="h-full w-full " />
+          </div>
         </div>
       </div>
     </>
