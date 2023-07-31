@@ -16,7 +16,7 @@ export default function Hero() {
 
   return (
     <> 
-      <div className=" bg-fixed bg-cover bg-[url('https://images.unsplash.com/photo-1601585195878-4017735dea2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80')]">
+      <div className=" bg-fixed bg-center bg-cover bg-[url('https://images.unsplash.com/photo-1601585195878-4017735dea2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80')]">
         <div className="bg-black/75 overflow-hidden backdrop-blur	 flex flex-col justify-center bg-no-repeat object-cover h-[100svh] ">
           {/* Encabezado con barra de navegación */}
           <header className="absolute inset-x-0 top-0 z-50">
