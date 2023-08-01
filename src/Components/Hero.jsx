@@ -104,11 +104,7 @@ export default function Hero() {
           </header>
 
           {/* Contenido del Hero */}
-<<<<<<< HEAD
-          <div className="relative isolate px-6 flex items-center pt-14 mt-auto lg:px-8">
-=======
           <div className="relative mt-auto px-6 flex items-center pt-14 lg:px-8">
->>>>>>> 2ea91f1d55f33e358249e1ce689aa02d87b1273d
             {/* Fondo degradado y efecto de desenfoque */}
             <div className=""></div>
             <div className="mx-auto max-w-5xl ">
@@ -136,13 +132,8 @@ export default function Hero() {
               </div>
             </div>
           </div>
-<<<<<<< HEAD
-          <div className='mt-auto ' >
-            <WaveHero color="#FDFDFD" />
-=======
           <div className="self-end h-20 w-full  mt-auto ">
             <img src={Wave} className="h-full w-full " />
->>>>>>> 2ea91f1d55f33e358249e1ce689aa02d87b1273d
           </div>
         </div>
       </div>
