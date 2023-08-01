@@ -59,7 +59,7 @@ const Clients = () => {
         destacado="Clientes"
         subtitulo="Algunos de los clientes que ya han confiado en nostros"
         />
-        <ul className="grid grid-cols-3 gap-10 sm:gap-12 md:grid-cols-3 lg:grid-cols-7">
+        <ul className="grid grid-cols-3 gap-10 sm:gap-12 md:grid-cols-3 lg:grid-cols-7 p-2 sm:p-0">
           {clientsData.map((client) => (
             <li
               key={client.id}
