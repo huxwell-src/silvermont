@@ -8,6 +8,9 @@ export default {
         'light-black': '#191919',
         light: '#FDFDFD',
       },
+      backgroundImage: {
+        'hero-wabe': "url('/assets/waveHero.svg')",
+      },
     },
   },
   plugins: [],

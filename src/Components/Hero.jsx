@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Logo, WaveHero } from './Icons';
 import { Dialog } from '@headlessui/react';
+import Wave from '../assets/wavHero.png';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 // Datos de navegación
@@ -16,7 +17,7 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <> 
+    <>
       <div className=" bg-fixed bg-center bg-cover bg-[url('https://images.unsplash.com/photo-1601585195878-4017735dea2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80')]">
         <div className="bg-black/75 overflow-hidden backdrop-blur	 flex flex-col justify-center bg-no-repeat object-cover h-[100svh] ">
           {/* Encabezado con barra de navegación */}
@@ -103,13 +104,18 @@ export default function Hero() {
           </header>
 
           {/* Contenido del Hero */}
+<<<<<<< HEAD
           <div className="relative isolate px-6 flex items-center pt-14 mt-auto lg:px-8">
+=======
+          <div className="relative mt-auto px-6 flex items-center pt-14 lg:px-8">
+>>>>>>> 2ea91f1d55f33e358249e1ce689aa02d87b1273d
             {/* Fondo degradado y efecto de desenfoque */}
             <div className=""></div>
             <div className="mx-auto max-w-5xl ">
               <div className="text-center">
-                <h1 className="text-4xl font-bold tracking-tight sm:text-6xl text-light ">
-                ¿Necesita grabar vídeos de alta calidad de las propiedades de su empresa? <br /> Nosotros podemos hacerlo.
+                <h1 className="text-4xl font-bold tracking-tight sm:text-[3rem] xl:text-6xl text-light ">
+                  ¿Necesita grabar vídeos de alta calidad de las propiedades de
+                  su empresa? <br /> Nosotros podemos hacerlo.
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600 text-light ">
                   Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
@@ -130,8 +136,13 @@ export default function Hero() {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
           <div className='mt-auto ' >
             <WaveHero color="#FDFDFD" />
+=======
+          <div className="self-end h-20 w-full  mt-auto ">
+            <img src={Wave} className="h-full w-full " />
+>>>>>>> 2ea91f1d55f33e358249e1ce689aa02d87b1273d
           </div>
         </div>
       </div>
