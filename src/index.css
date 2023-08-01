@@ -9,8 +9,19 @@
   scroll-behavior: smooth;
 }
 
+.rounded-irregular-circle {
+  border-top-left-radius: 78%;
+  border-top-right-radius: 42%;
+  border-bottom-right-radius: 65%;
+  border-bottom-left-radius: 53%;
+}
+
 .btn {
   @apply rounded-full bg-gold px-5 py-2.5 hover:scale-105 font-semibold text-white shadow-sm hover:bg-gold/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 hover:shadow-lg active:shadow-sm focus-visible:outline-indigo-600 active:scale-95 duration-200;
+}
+
+.p {
+  @apply text-gray-700 text-justify mt-2 mr-2 leading-6
 }
 
 .input {

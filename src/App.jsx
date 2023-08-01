@@ -5,6 +5,8 @@ import Clients from './Components/Clients';
 import Galery from './Components/Galery';
 import Cta from './Components/Cta'
 import Rrss from './Components/Rrss';
+import About from './Components/About';
+import Services from './Components/Services';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import './App.css';
 
@@ -26,6 +28,10 @@ Como podemos ayudarte?"
           allowEsc="True"
         />
         <Hero/>
+        <div className='container mx-auto px-4'>
+          <About/>
+        </div>
+          <Services/>
         <div className='container mx-auto px-4'>
           <Galery/>
           <Clients/>

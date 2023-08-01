@@ -1,60 +1,43 @@
-import {} from 'react'
+import {  } from 'react';
 import Tittle from './Tittle';
+
+const videos = [
+  "https://www.youtube.com/embed/_sugCKZiUes?autoplay=1&mute=1&controls=0&showinfo=0&title=0loop=1",
+  "https://www.youtube.com/embed/yrQeELBt7FA?autoplay=1&mute=1&controls=0&showinfo=0&title=0loop=1",
+  "https://www.youtube.com/embed/pGGWSDj73Cg?autoplay=1&mute=1&controls=0&showinfo=0&title=0loop=1",
+  "https://www.youtube.com/embed/eJAadHdYVz0?autoplay=1&mute=1&controls=0&showinfo=0&title=0loop=1",
+];
 
 const Galery = () => {
   return (
-    <section id='Galery' >
-        <Tittle
+    <section id='Galery'>
+      <Tittle
         titulo="Nuestro"
         destacado="Trabajo"
-        subtitulo="Construyendo Relaciones Duraderas: Nuestra Dedicación a los Clientes y la Excelencia en Cada Proyecto"
-        />
-        <div className='flex flex-col  md:flex-row my-10' >
-            <div className='md:w-1/2 mr-10' >
-                <h2 className='mb-2 text-2xl font-bold uppercase ' >Galeria </h2>
-                <p className='text-sm leading-5 text-justify text-light-black' >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque porro deleniti possimus ducimus est eos ipsum officia, suscipit mollitia quisquam perspiciatis quod exercitationem accusantium quas fugit quam expedita. Voluptatum, neque!</p>
-            </div>
-            <div className="grid grid-cols-2 w-full ml-20 gap-4">
-                <div className="h-full">
-                    <iframe
-                    title="Video 1"
-                    className="mb-4 h-36 w-full rounded-2xl md:h-48 lg:h-64"
-                    src="https://www.youtube.com/embed/_sugCKZiUes?autoplay=1&mute=1"
-                    frameBorder="0"
-                    allowFullScreen
-                    allow="autoplay"
-                    ></iframe>
-                    <iframe
-                    title="Video 2"
-                    className="mb-4 h-52 w-full rounded-2xl md:h-64 lg:h-96"
-                    src="https://www.youtube.com/embed/_sugCKZiUes?autoplay=1&mute=1"
-                    frameBorder="0"
-                    allowFullScreen
-                    allow="autoplay"
-                    ></iframe>
-                </div>
-                <div className="h-full">
-                    <iframe
-                    title="Video 3"
-                    className="mb-4 h-52 w-full rounded-2xl md:h-64 lg:h-96"
-                    src="https://www.youtube.com/embed/_sugCKZiUes?autoplay=1&mute=1"
-                    frameBorder="0"
-                    allowFullScreen
-                    allow="autoplay"
-                    ></iframe>
-                    <iframe
-                    title="Video 4"
-                    className="mb-4 h-36 w-full rounded-2xl md:h-48 lg:h-64"
-                    src="https://www.youtube.com/embed/_sugCKZiUes?autoplay=1&mute=1"
-                    frameBorder="0"
-                    allowFullScreen
-                    allow="autoplay"
-                    ></iframe>
-                </div>
-            </div>
+        subtitulo="Descubre el arte audiovisual en movimiento"
+      />
+      <div className='flex flex-col xl:flex-row my-10'>
+        <div className='xl:w-1/3 mr-10 mb-6'>
+        <h3 className='text-2xl font-bold'><span className='text-gold' >Galeria de</span>  Videos</h3>
+          <p className='p'>
+            Despierta tus emociones con nuestra cautivadora galería audiovisual. En Silvermount, hemos creado una selección de videos que no solo cuentan historias, sino que también activan conexiones emocionales profundas. Desde impactantes anuncios comerciales hasta deslumbrantes recorridos virtuales de propiedades inmobiliarias, cada video ha sido meticulosamente diseñado para dejar una impresión duradera en tu mente y corazón. Sumérgete en un mundo de narrativas visuales cautivadoras y experimenta el poder del audiovisual en su máxima expresión. 
+          </p>
         </div>
+        <div className="grid lg:grid-cols-2 gap-2">
+          {videos.map((videoUrl, index) => (
+            <div key={index}>
+              <iframe
+                src={videoUrl}
+                frameBorder="0"
+                className='h-72 w-full  xl:w-96 rounded-2xl'
+                allowFullScreen
+              ></iframe>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Galery
+export default Galery;

@@ -1,17 +1,18 @@
 import { useState } from 'react';
-import { Logo } from './Icons';
+import { Logo, WaveHero } from './Icons';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 // Datos de navegación
 const navigation = [
-  { name: 'Inicio', href: '#' },
-  { name: 'Servicios', href: '#' },
+  { name: 'Nosotros', href: '#About' },
+  { name: 'Servicios', href: '#Services' },
   { name: 'Galeria', href: '#Galery' },
   { name: 'Contacto', href: '#Contact' },
 ];
 
 export default function Hero() {
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -102,7 +103,7 @@ export default function Hero() {
           </header>
 
           {/* Contenido del Hero */}
-          <div className="relative isolate px-6 flex items-center pt-14 lg:px-8">
+          <div className="relative isolate px-6 flex items-center pt-14 mt-auto lg:px-8">
             {/* Fondo degradado y efecto de desenfoque */}
             <div className=""></div>
             <div className="mx-auto max-w-5xl ">
@@ -120,7 +121,7 @@ export default function Hero() {
                     Contactar
                   </a>
                   <a
-                    href="#"
+                    href="#About"
                     className="text-sm font-semibold leading-6 text-light hover:scale-105 duration-200"
                   >
                     Explorar <span aria-hidden="true">→</span>
@@ -128,6 +129,9 @@ export default function Hero() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className='mt-auto ' >
+            <WaveHero color="#FDFDFD" />
           </div>
         </div>
       </div>

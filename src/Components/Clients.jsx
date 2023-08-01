@@ -55,7 +55,7 @@ const Clients = () => {
     <section className="">
       <div className="mx-auto py-8 lg:py-16">
         <Tittle
-        titulo="Nuestross"
+        titulo="Nuestros"
         destacado="Clientes"
         subtitulo="Visita todas nuestras redes sociales y descubre todo lo nuevo que tendemos para ti"
         />
