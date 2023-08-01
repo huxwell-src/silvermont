@@ -17,15 +17,14 @@ function App() {
         accountName="Silvermount"
         avatar="https://i.ibb.co/n36g81X/Logo.png"
         statusMessage="Respuesta usual en 1 hora"
-        chatMessage="Hola, bienvenido! 🤝
-Como podemos ayudarte?"
-          placeholder="Escribir un mensaje"
-          phoneNumber="+[country code] [number]"
-          notification= "true"
-          notificationSound="true"
-          notificationDelay="30"
-          allowClickAway="True"
-          allowEsc="True"
+        chatMessage="💬 Estamos aquí para dar vida a tus ideas. Hablemos y descubre cómo podemos crear juntos algo extraordinario. 🚀🎥"
+        placeholder="Escribir un mensaje"
+        phoneNumber="+[country code] [number]"
+        notification= "true"
+        notificationSound="true"
+        notificationDelay="30"
+        allowClickAway="True"
+        allowEsc="True"
         />
         <Hero/>
         <div className='container mx-auto px-4'>

@@ -57,7 +57,7 @@ const Clients = () => {
         <Tittle
         titulo="Nuestros"
         destacado="Clientes"
-        subtitulo="Visita todas nuestras redes sociales y descubre todo lo nuevo que tendemos para ti"
+        subtitulo="Algunos de los clientes que ya han confiado en nostros"
         />
         <ul className="grid grid-cols-3 gap-10 sm:gap-12 md:grid-cols-3 lg:grid-cols-7">
           {clientsData.map((client) => (

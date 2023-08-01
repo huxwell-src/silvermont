@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Logo, WaveHero } from './Icons';
+import { Logo } from './Icons';
 import { Dialog } from '@headlessui/react';
 import Wave from '../assets/wavHero.png';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
@@ -29,7 +29,6 @@ export default function Hero() {
               <div className="flex lg:flex-1">
                 {/* Logo */}
                 <a href="#" className="-m-1.5 p-1.5">
-                  <span className="sr-only">Silvermont</span>
                   <Logo height="32" color="#FDFDFD" />
                 </a>
               </div>
@@ -40,7 +39,6 @@ export default function Hero() {
                   className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-light"
                   onClick={() => setMobileMenuOpen(true)}
                 >
-                  <span className="sr-only">Open main menu</span>
                   <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                 </button>
               </div>
@@ -70,7 +68,6 @@ export default function Hero() {
                 <div className="flex items-center justify-between">
                   {/* Logo en el menú desplegable */}
                   <a href="#" className="-m-1.5 p-1.5">
-                    <span className="sr-only">Silvermount</span>
                     <Logo height="25" color="#191919" />
                   </a>
                   {/* Botón de cierre del menú desplegable */}
@@ -79,7 +76,6 @@ export default function Hero() {
                     className="-m-2.5 rounded-md p-2.5 text-light-black"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    <span className="sr-only">Close menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
                 </div>
@@ -109,14 +105,11 @@ export default function Hero() {
             <div className=""></div>
             <div className="mx-auto max-w-5xl ">
               <div className="text-center">
-                <h1 className="text-4xl font-bold tracking-tight sm:text-[3rem] xl:text-6xl text-light ">
-                  ¿Necesita grabar vídeos de alta calidad de las propiedades de
-                  su empresa? <br /> Nosotros podemos hacerlo.
+                <h1 className="text-4xl font-bold tracking-tight sm:text-[3rem] xl:text-7xl text-light ">
+                    Descubre la magia del audiovisual con Silvermont
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600 text-light ">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua.
+                <p className="mt-6 text-xl leading-8 text-light ">
+                  Capturando emociones, contando historias, creando impacto.
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <a href="#Contact" className="btn">
